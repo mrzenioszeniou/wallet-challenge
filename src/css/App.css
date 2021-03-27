@@ -1,0 +1,116 @@
+:root {
+  --lighter: #ffffff;
+  --light: #f0efef;
+  --main: #ddeedd;
+  --dark: #b0aac0;
+  --darker: #5f5775;
+  background-color: var(--main);
+  color: var(--darker);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+input {
+  border-radius: 5px 0px 0px 5px;
+  border: solid 2px var(--darker);
+  padding: 10px;
+  margin-right : 0em;
+  margin-bottom: 2em;
+  height: 30px;
+  background-color: var(--lighter);
+  flex-grow: 1;
+  display: flex;
+  font-size: medium;
+}
+
+input:disabled {
+  background-color: var(--light);
+}
+
+input.valid {
+  border-color: #00cc44;
+}
+
+input.invalid {
+  border-color: #ff4d4d;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+h1 {
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.bigButtonImg {
+  height: 40px;
+  width: 40px;
+  opacity: 0.7;
+}
+
+.buttonImg {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  background-color: var(--lighter);
+  border: solid;
+  border-radius: 0px 5px 5px 0px;
+  border-width: 2px 2px 2px 0px;
+}
+
+.buttonImg:hover {
+  opacity: 0.7;
+}
+
+.sensitiveButton {
+  border: solid 2px var(--darker);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: small;
+  padding: 5px;
+  border-radius: 5px;
+  user-select: none;
+  background-color: var(--lighter);
+  margin-bottom: 3em;
+}
+
+.sensitiveButton:hover {
+  opacity: 0.7;
+}
+
+.hbox {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.vbox {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  font-size: smaller;
+}
